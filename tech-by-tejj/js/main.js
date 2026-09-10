@@ -1,0 +1,1 @@
+const m=document.querySelector('.menu'),n=document.querySelector('.nav-links');if(m)m.onclick=()=>n.classList.toggle('open');function handleSubmit(e){e.preventDefault();document.querySelector('.form-msg').textContent='Thanks! Your enquiry is ready. Connect this form to WhatsApp, EmailJS, Formspree or your backend to receive it.';e.target.reset()}
