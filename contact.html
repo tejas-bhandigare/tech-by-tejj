@@ -51,20 +51,44 @@
                         </div>
                     </div>
                 </div>
-                <form class="form" onsubmit="handleSubmit(event)"><label>Name<input required
-                            placeholder="Your name"></label><label>Phone / WhatsApp<input required type="tel"
-                            placeholder="Your contact number"></label><label>What do you need?<select>
-                            <option>Business Website</option>
-                            <option>Custom Web Development</option>
-                            <option>AI Agent / AI Solution</option>
-                            <option>College Mini Project</option>
-                            <option>College Major / Final-Year Project</option>
-                            <option>Website Redesign</option>
-                        </select></label><label>Tell us about your idea<textarea rows="5"
-                            placeholder="Briefly describe what you want to build..."></textarea></label><button
-                        class="btn primary" type="submit">Send Enquiry →</button>
-                    <p class="form-msg"></p>
-                </form>
+              <form class="form" onsubmit="handleSubmit(event)">
+
+    <label>
+        Name
+        <input id="name" name="name" required placeholder="Your name">
+    </label>
+
+    <label>
+        Phone / WhatsApp
+        <input id="phone" name="phone" required type="tel"
+            placeholder="Your contact number">
+    </label>
+
+    <label>
+        What do you need?
+        <select id="service" name="service">
+            <option>Business Website</option>
+            <option>Custom Web Development</option>
+            <option>AI Agent / AI Solution</option>
+            <option>College Mini Project</option>
+            <option>College Major / Final-Year Project</option>
+            <option>Website Redesign</option>
+        </select>
+    </label>
+
+    <label>
+        Tell us about your idea
+        <textarea id="message" name="message" rows="5"
+            placeholder="Briefly describe what you want to build..."></textarea>
+    </label>
+
+    <button class="btn primary" type="submit">
+        Send Enquiry →
+    </button>
+
+    <p class="form-msg"></p>
+
+</form>
             </div>
         </section>
     </main>
