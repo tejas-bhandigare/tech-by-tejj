@@ -4,6 +4,423 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Contact Tech by Tejj for websites, custom web applications, AI solutions, automation and digital development services.">
+    <title>Contact — Tech by Tejj</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="nav-wrap">
+        <nav class="nav container">
+
+            <a class="brand" href="index.html">
+                <span class="brand-name">
+                    TECH BY <span>TEJJ</span>
+                </span>
+                <small>Build. Think. Grow.</small>
+            </a>
+
+            <button class="menu">☰</button>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a class="nav-cta" href="contact.html">Let's Talk →</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    START YOUR PROJECT
+                </p>
+
+                <h1>
+                    Have a project in mind?
+                    <span class="gradient">Let's build it.</span>
+                </h1>
+
+                <p>
+                    Tell us what you want to build — a business website,
+                    custom web application, AI solution or automation.
+                    We'll discuss the requirements and next steps.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section">
+
+            <div class="container contact-grid">
+
+                <!-- CONTACT INFORMATION -->
+                <div>
+
+                    <p class="eyebrow">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Start with a conversation.
+                    </h2>
+
+                    <p class="muted">
+                        You don't need a perfect specification.
+                        Share the basic idea, your requirements and
+                        approximate timeline. We'll help you plan the next step.
+                    </p>
+
+
+                    <div class="contact-info">
+
+                        <div>
+                            <span>☎</span>
+
+                            <div>
+                                <b>Phone / WhatsApp</b>
+                                <small>
+                                    <a href="tel:+917507900526">
+                                        +91 75079 00526
+                                    </a>
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span>✉</span>
+
+                            <div>
+                                <b>Email</b>
+                                <small>
+                                    <a href="mailto:tejasbhandigare@gmail.com">
+                                        tejasbhandigare@gmail.com
+                                    </a>
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span>⌖</span>
+
+                            <div>
+                                <b>Availability</b>
+                                <small>
+                                    Remote — available across locations
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span>⚡</span>
+
+                            <div>
+                                <b>What we build</b>
+                                <small>
+                                    Websites · Web Apps · AI · Automation
+                                </small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ENQUIRY FORM -->
+                <form class="form" onsubmit="handleSubmit(event)">
+
+                    <label>
+                        Name
+
+                        <input
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Your name">
+                    </label>
+
+
+                    <label>
+                        Phone / WhatsApp
+
+                        <input
+                            id="phone"
+                            name="phone"
+                            required
+                            type="tel"
+                            placeholder="+91 XXXXX XXXXX">
+                    </label>
+
+
+                    <label>
+                        What do you need?
+
+                        <select id="service" name="service">
+
+                            <option value="Business Website">
+                                Business Website
+                            </option>
+
+                            <option value="Custom Web Application">
+                                Custom Web Application
+                            </option>
+
+                            <option value="AI / Automation">
+                                AI / Automation
+                            </option>
+
+                            <option value="Website Redesign">
+                                Website Redesign
+                            </option>
+
+                            <option value="Academic Project">
+                                Academic Project
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <!-- BUDGET -->
+                    <label>
+                        Estimated Budget
+
+                        <select id="budget" name="budget">
+
+                            <option value="Not sure yet">
+                                Not sure yet
+                            </option>
+
+                            <option value="Under ₹5,000">
+                                Under ₹5,000
+                            </option>
+
+                            <option value="₹5,000 – ₹10,000">
+                                ₹5,000 – ₹10,000
+                            </option>
+
+                            <option value="₹10,000 – ₹25,000">
+                                ₹10,000 – ₹25,000
+                            </option>
+
+                            <option value="₹25,000 – ₹50,000">
+                                ₹25,000 – ₹50,000
+                            </option>
+
+                            <option value="₹50,000+">
+                                ₹50,000+
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <!-- TIMELINE -->
+                    <label>
+                        Expected Timeline
+
+                        <select id="timeline" name="timeline">
+
+                            <option value="Not decided">
+                                Not decided
+                            </option>
+
+                            <option value="Within 1 week">
+                                Within 1 week
+                            </option>
+
+                            <option value="1–2 weeks">
+                                1–2 weeks
+                            </option>
+
+                            <option value="2–4 weeks">
+                                2–4 weeks
+                            </option>
+
+                            <option value="1+ month">
+                                1+ month
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <!-- PROJECT DETAILS -->
+                    <label>
+                        Tell us about your project
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                            placeholder="What do you want to build? Tell us about the business, features, pages, integrations or problem you want to solve..."></textarea>
+
+                    </label>
+
+
+                    <button
+                        class="btn primary"
+                        type="submit">
+
+                        Send Enquiry →
+
+                    </button>
+
+
+                    <p class="form-msg"></p>
+
+
+                    <small style="display:block;margin-top:10px;">
+                        Your enquiry will be used only to understand your project
+                        requirements and contact you about the request.
+                    </small>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK CONTACT CTA -->
+        <section class="section">
+
+            <div class="container cta">
+
+                <div>
+
+                    <p class="eyebrow">
+                        PREFER WHATSAPP?
+                    </p>
+
+                    <h2>
+                        Let's discuss your idea directly.
+                    </h2>
+
+                    <p>
+                        Send us a message on WhatsApp with your project idea,
+                        requirements and preferred timeline.
+                    </p>
+
+                </div>
+
+                <a
+                    class="btn white"
+                    href="https://wa.me/917507900526?text=Hi%20Tech%20by%20Tejj,%20I%20want%20to%20discuss%20a%20project."
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Chat on WhatsApp →
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <div class="footer-name">
+                    TECH BY <span>TEJJ</span>
+                </div>
+
+                <p>
+                    Build. Think. Grow.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <a href="tel:+917507900526">
+                    +91 75079 00526
+                </a>
+
+                <a href="mailto:tejasbhandigare@gmail.com">
+                    tejasbhandigare@gmail.com
+                </a>
+
+                <span>
+                    Available Remotely
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Tech by Tejj. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Tech by Tejj — Build. Think. Grow.">
     <title>Contact — Tech by Tejj</title>
     <link rel="stylesheet" href="css/style.css">
@@ -122,4 +539,4 @@
     <script src="js/main.js"></script>
 </body>
 
-</html>
+</html> -->
