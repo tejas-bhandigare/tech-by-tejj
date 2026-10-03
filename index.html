@@ -41,6 +41,79 @@
         }
     </style>
 
+
+    <style>
+        /* Homepage spacing refinement */
+        .hero {
+            padding: 58px 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 5.2vw, 60px);
+            line-height: 1.04;
+            letter-spacing: -2.4px;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            font-size: 16px;
+        }
+
+        .actions {
+            margin: 20px 0;
+        }
+
+        .visual {
+            height: 370px;
+        }
+
+        .browser {
+            top: 50px;
+            height: 240px;
+        }
+
+        .section {
+            padding: 65px 0;
+        }
+
+        .head {
+            margin-bottom: 28px;
+        }
+
+        @media (max-width: 800px) {
+            .hero {
+                padding: 50px 0;
+            }
+
+            .visual {
+                height: 340px;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .hero {
+                padding: 42px 0;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+                letter-spacing: -1.8px;
+            }
+
+            .section {
+                padding: 48px 0;
+            }
+
+            .visual {
+                height: 320px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -279,6 +352,14 @@
 
 
 
+
+
+
+
+
+
+
+
 <!-- <!doctype html>
 <html>
 
@@ -292,6 +373,36 @@
 
 
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .float {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .float-icon {
+            width: 22px;
+            height: 22px;
+            flex: 0 0 22px;
+            fill: none;
+            stroke: #1769ff;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .float span {
+            line-height: 1.35;
+        }
+
+        .float small {
+            color: #64748b;
+            font-size: 9px;
+            font-weight: 500;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -326,9 +437,36 @@
                         <h3>Build your digital solution.</h3>
                         <p>Websites • Web Apps • AI • Automation</p><button>Let's build</button>
                     </div>
-                    <div class="float f1">🏢 Businesses<br><small>Build your online presence</small></div>
-                    <div class="float f2">🚀 Startups & Individuals<br><small>Turn ideas into products</small></div>
-                    <div class="float f3">🤖 AI & Automation<br><small>Automate smarter</small></div>
+                    <div class="float f1">
+                        <svg class="float-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 21h18"></path>
+                            <path d="M6 21V3h9v18"></path>
+                            <path d="M15 8h3v13"></path>
+                            <path d="M9 7h2"></path>
+                            <path d="M9 11h2"></path>
+                            <path d="M9 15h2"></path>
+                        </svg>
+                        <span>Businesses<br><small>Build your online presence</small></span>
+                    </div>
+                    <div class="float f2">
+                        <svg class="float-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4.5 16.5c-1.5 1.5-2 4-2 4s2.5-.5 4-2c1.2-1.2 1.2-3.2 0-4.4"></path>
+                            <path d="M12 15l-3-3a12 12 0 0 1 8.5-8.5L21 3l-.5 3.5A12 12 0 0 1 12 15Z"></path>
+                            <path d="M9 12 4 17"></path>
+                            <circle cx="15.5" cy="8.5" r="1.5"></circle>
+                        </svg>
+                        <span>Startups & Individuals<br><small>Turn ideas into products</small></span>
+                    </div>
+                    <div class="float f3">
+                        <svg class="float-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="4" y="7" width="16" height="13" rx="3"></rect>
+                            <path d="M12 3v4"></path>
+                            <circle cx="9" cy="13" r="1"></circle>
+                            <circle cx="15" cy="13" r="1"></circle>
+                            <path d="M8 17h8"></path>
+                        </svg>
+                        <span>AI & Automation<br><small>Automate smarter</small></span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -341,21 +479,21 @@
                 </div>
                 <div class="paths">
                     <article class="path">
-                        <div class="path-icon">🏢</div>
+                        
                         <h3>For Businesses</h3>
                         <p>Build a professional online presence and digital tools that help your business grow.</p>
                         <ul><li>Business websites</li><li>Landing pages</li><li>Custom web applications</li></ul>
                         <a href="services.html#business">Business solutions →</a>
                     </article>
                     <article class="path">
-                        <div class="path-icon">🤖</div>
+                        
                         <h3>For AI & Automation</h3>
                         <p>Automate repetitive tasks and build AI-powered workflows around your business.</p>
                         <ul><li>AI chatbots & agents</li><li>AI applications</li><li>Workflow automation</li></ul>
                         <a href="services.html#ai">AI & automation →</a>
                     </article>
                     <article class="path">
-                        <div class="path-icon">🚀</div>
+                       
                         <h3>For Startups & Individuals</h3>
                         <p>Turn your idea into a working website, application or digital product.</p>
                         <ul><li>MVP development</li><li>Custom web applications</li><li>APIs & database integration</li></ul>
